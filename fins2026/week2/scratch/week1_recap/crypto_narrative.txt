@@ -1,0 +1,6 @@
+
+Headline claim: The crypto panel shows that return leadership and risk are tightly linked, but not identical.
+DOGE delivered the strongest growth of $1 over the sample, reaching about $42.47 for every $1 invested at the start of the sample.
+The risk-return scatter shows that DOGE had the highest annualized volatility, while the drawdown statistics show that ADA experienced the deepest peak-to-trough loss.
+This means the strongest narrative is not simply 'crypto went up'; the evidence shows large differences across coins in return, volatility, and downside risk.
+A limitation is that this analysis uses historical daily OHLCV data only, so it does not explain the news, liquidity conditions, or crypto-specific events that may have driven the moves.

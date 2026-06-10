@@ -1,0 +1,6 @@
+ticker,sector,first_date,last_date,observations,final_value_of_1,annualized_return_pct,annualized_volatility_pct,sharpe_ratio_rf_0,max_drawdown_pct,average_dollar_volume_millions
+XLK,Technology,2020-01-02,2026-06-08,1615,4.158,26.116,27.818,0.939,-33.559,1373.337
+XLE,Energy,2020-01-02,2026-06-08,1615,2.497,20.158,34.112,0.591,-60.605,1520.315
+XLY,Consumer Discretionary,2020-01-02,2026-06-08,1615,1.918,13.4,25.388,0.528,-39.67,884.74
+XLF,Financials,2020-01-02,2026-06-08,1615,1.88,12.936,24.798,0.522,-42.863,1798.386
+XLV,Health Care,2020-01-02,2026-06-08,1615,1.654,9.471,17.996,0.526,-28.404,1264.211

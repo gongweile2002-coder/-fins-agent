@@ -1,0 +1,5 @@
+Headline claim: Sector exposure mattered because XLK (Technology) produced the strongest wealth growth, ending at about $4.16 for every $1 invested.
+The figures show that the return leader was not risk-free: XLE had the highest annualized volatility and XLE had the deepest peak-to-trough drawdown.
+Co-movement was meaningful but not perfect, with average pairwise return correlation of about 0.60, so diversification across sectors still had some value.
+Risk caveat: the sample is historical and does not prove that the winning sector will continue to lead in a different inflation, rate, or earnings environment.
+Portfolio implication: a sector portfolio can reduce single-sector dependence, but it should still monitor drawdowns because sector ETFs can fall together during broad market stress.
