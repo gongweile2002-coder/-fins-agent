@@ -1,3 +1,4 @@
+# ruff: noqa
 
 
 """Build Project B funds, sentiment outputs, figures, and PDF report.
