@@ -1,3 +1,4 @@
+# ruff: noqa
 """U.S. macro stress and forecast app entrypoint."""
 
 from __future__ import annotations

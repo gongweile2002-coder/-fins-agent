@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the full 50-ticker Tiingo panel pull and save the long parquet output."""
 
 from __future__ import annotations

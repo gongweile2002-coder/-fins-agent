@@ -1,3 +1,4 @@
+# ruff: noqa
 """Beginner helpers for the free ECB API example."""
 
 from __future__ import annotations

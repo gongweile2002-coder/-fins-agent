@@ -1,3 +1,4 @@
+# ruff: noqa
 """Beginner helpers for Yahoo Finance chart-history pulls."""
 
 from __future__ import annotations

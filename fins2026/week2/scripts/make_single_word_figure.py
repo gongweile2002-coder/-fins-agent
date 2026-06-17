@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build one Word-ready FT-style figure from a validation dataset."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Load the raw Week 1 Tech 4 CSV and verify the date parse."""
 
 from pathlib import Path

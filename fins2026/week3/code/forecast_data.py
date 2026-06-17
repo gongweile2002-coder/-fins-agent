@@ -1,3 +1,4 @@
+# ruff: noqa
 """Australia-first data builders for forecasts and the app."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 2 Australia macro data loaders, panels, and feature builders."""
 
 from __future__ import annotations

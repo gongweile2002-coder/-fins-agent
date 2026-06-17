@@ -1,3 +1,4 @@
+# ruff: noqa
 """Stage 3 helpers for Week 4 in-sample mean-variance portfolios."""
 
 from __future__ import annotations

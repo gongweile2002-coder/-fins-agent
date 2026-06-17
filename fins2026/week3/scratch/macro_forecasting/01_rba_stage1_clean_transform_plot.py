@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3, part 1: read Australian macro data, clean it, transform it, and plot it.
 
 This script is the first half of the Week 3 forecasting walkthrough. It covers

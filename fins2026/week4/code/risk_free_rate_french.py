@@ -1,3 +1,4 @@
+# ruff: noqa
 """Helpers for the Week 4 Kenneth French daily risk-free download."""
 
 from __future__ import annotations

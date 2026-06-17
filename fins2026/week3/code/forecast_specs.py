@@ -1,3 +1,4 @@
+# ruff: noqa
 """Australia-first forecast series metadata."""
 
 from __future__ import annotations

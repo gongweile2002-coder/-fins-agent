@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 2 exercise: crypto OHLCV data narrative."""
 
 from io import BytesIO

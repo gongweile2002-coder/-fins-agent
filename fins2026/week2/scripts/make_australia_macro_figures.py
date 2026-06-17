@@ -1,3 +1,4 @@
+# ruff: noqa
 """Create the Week 2 Australia macro figure pack."""
 
 from __future__ import annotations

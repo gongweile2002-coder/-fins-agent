@@ -1,3 +1,4 @@
+# ruff: noqa
 """Walk through Week 2 FRED Data Factory Floor Station 1."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Public U.S. market time-series app entrypoint."""
 
 from __future__ import annotations

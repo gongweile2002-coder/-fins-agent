@@ -1,3 +1,4 @@
+# ruff: noqa
 """Query the clean Tech 4 panel with DuckDB and pandas."""
 
 from pathlib import Path

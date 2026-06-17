@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pure insight, metric, and figure helpers for the Week 3 companion U.S. app."""
 
 from __future__ import annotations

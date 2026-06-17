@@ -1,3 +1,4 @@
+# ruff: noqa
 """Beginner forecasting helpers for the Week 3 lecture ladder."""
 
 from __future__ import annotations

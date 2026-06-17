@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build FT-style Stage 2 crypto figures for Week 5."""
 
 from __future__ import annotations

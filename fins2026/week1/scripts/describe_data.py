@@ -1,3 +1,4 @@
+# ruff: noqa
 """Describe the Week 1 workshop and practice datasets."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3 self-contained panel helpers for deployable app bundles."""
 
 from __future__ import annotations

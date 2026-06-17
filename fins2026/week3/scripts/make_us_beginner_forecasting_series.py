@@ -1,3 +1,4 @@
+# ruff: noqa
 """Create the Week 3 U.S. beginner forecasting source CSVs."""
 
 from __future__ import annotations

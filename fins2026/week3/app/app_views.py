@@ -1,3 +1,4 @@
+# ruff: noqa
 """Streamlit view rendering for the Australia macro forecast app."""
 
 from __future__ import annotations

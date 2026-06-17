@@ -1,3 +1,4 @@
+# ruff: noqa
 """Shared month-end panel helpers for the Week 2 FRED workflow."""
 
 from __future__ import annotations

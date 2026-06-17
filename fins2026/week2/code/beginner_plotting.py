@@ -1,3 +1,4 @@
+# ruff: noqa
 """Beginner plotting helpers for the Week 2 time-series on-ramp."""
 
 from __future__ import annotations

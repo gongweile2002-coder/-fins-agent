@@ -1,3 +1,4 @@
+# ruff: noqa
 """Print the canonical Week 3 workflow and create output folders."""
 
 from __future__ import annotations

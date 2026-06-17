@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3, part 2: basic forecasting with an AR(1) model and a basic ARIMA model.
 
 This is the second half of the Week 3 walkthrough. It reads the cleaned monthly panel

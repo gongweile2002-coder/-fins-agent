@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build Week 4 Stage 3 in-sample portfolios and efficient-frontier outputs."""
 
 from __future__ import annotations

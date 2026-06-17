@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 5 client-facing crypto fund app entrypoint."""
 
 from __future__ import annotations

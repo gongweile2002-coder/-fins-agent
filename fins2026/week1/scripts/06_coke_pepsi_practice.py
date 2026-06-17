@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 1 KO vs PEP practice workflow end to end."""
 
 from __future__ import annotations

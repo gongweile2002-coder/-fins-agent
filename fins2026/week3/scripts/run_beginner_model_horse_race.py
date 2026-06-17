@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 3 beginner forecast horse race."""
 
 from __future__ import annotations

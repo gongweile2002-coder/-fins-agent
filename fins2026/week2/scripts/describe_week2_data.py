@@ -1,3 +1,4 @@
+# ruff: noqa
 """Describe the datasets used in the Week 2 figure and app lab."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Convert a saved Tiingo long panel into a wide close-price table."""
 
 from __future__ import annotations

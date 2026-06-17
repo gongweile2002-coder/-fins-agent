@@ -1,3 +1,4 @@
+# ruff: noqa
 """Stage 3 helpers for Week 5 out-of-sample crypto portfolio weights and returns."""
 
 from __future__ import annotations

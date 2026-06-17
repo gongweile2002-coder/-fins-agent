@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 5 crypto data and return-diagnostic helpers."""
 
 from .crypto_api_yahoo import (

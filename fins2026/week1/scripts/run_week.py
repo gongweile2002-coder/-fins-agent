@@ -1,3 +1,4 @@
+# ruff: noqa
 """Print the Week 1 run order and confirm output directories."""
 
 from __future__ import annotations

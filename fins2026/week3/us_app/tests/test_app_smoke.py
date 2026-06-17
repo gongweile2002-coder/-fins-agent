@@ -1,3 +1,4 @@
+# ruff: noqa
 """Smoke test for the Week 3 companion U.S. macro app."""
 
 from __future__ import annotations

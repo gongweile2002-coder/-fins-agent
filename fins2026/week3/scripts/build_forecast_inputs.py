@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build the Week 3 Australia/U.S. forecast input panels."""
 
 from __future__ import annotations

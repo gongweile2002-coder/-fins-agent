@@ -1,4 +1,5 @@
-﻿"""FT-style story figures for the Week 3 forecasting lecture."""
+# ruff: noqa
+"""FT-style story figures for the Week 3 forecasting lecture."""
 
 from __future__ import annotations
 

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Small helper for Week 4 scripts that need repo-root imports."""
 
 from __future__ import annotations

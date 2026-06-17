@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build the committed Week 4 app fallback fixture."""
 
 from __future__ import annotations

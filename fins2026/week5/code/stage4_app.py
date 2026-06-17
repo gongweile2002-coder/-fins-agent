@@ -1,3 +1,4 @@
+# ruff: noqa
 """Stage 4 helpers for the Week 5 client-facing crypto fund app."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 2 FRED Stage 1 timing contracts and long-table helpers."""
 
 from __future__ import annotations

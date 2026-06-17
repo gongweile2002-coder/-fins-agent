@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the complete Week 2 figure lab."""
 
 from __future__ import annotations

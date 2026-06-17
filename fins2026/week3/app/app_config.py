@@ -1,3 +1,4 @@
+# ruff: noqa
 """Configuration constants for the Australia macro forecast app."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3, even simpler: download the Bitcoin price, plot it, and compute returns.
 
 This is the first of two scripts. It downloads the daily BTC-USD price from Yahoo

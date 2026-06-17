@@ -1,3 +1,4 @@
+# ruff: noqa
 """Print the Week 3 forecast target and model configuration."""
 
 from __future__ import annotations

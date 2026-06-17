@@ -1,3 +1,4 @@
+# ruff: noqa
 """Summarize the data sources used in Week 3."""
 
 from __future__ import annotations

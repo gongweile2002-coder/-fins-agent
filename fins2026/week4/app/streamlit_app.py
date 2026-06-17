@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 4 portfolio app entrypoint."""
 
 from __future__ import annotations

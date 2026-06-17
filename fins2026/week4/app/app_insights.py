@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pure figures, metrics, and formatting helpers for the Week 4 app."""
 
 from __future__ import annotations

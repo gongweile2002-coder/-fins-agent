@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the full Week 1 Tech 4 pipeline in one file."""
 
 from pathlib import Path

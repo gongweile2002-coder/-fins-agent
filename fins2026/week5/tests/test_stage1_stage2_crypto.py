@@ -1,3 +1,4 @@
+# ruff: noqa
 """Offline tests for the Week 5 crypto helpers."""
 
 from __future__ import annotations

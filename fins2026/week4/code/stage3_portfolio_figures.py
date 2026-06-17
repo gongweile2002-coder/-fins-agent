@@ -1,3 +1,4 @@
+# ruff: noqa
 """FT-style Stage 3 figures for Week 4 portfolio construction."""
 
 from __future__ import annotations

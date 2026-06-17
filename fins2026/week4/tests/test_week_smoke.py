@@ -1,3 +1,4 @@
+# ruff: noqa
 """Local smoke test for the standard weekly scaffold."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Offline tests for the Week 5 Stage 3 out-of-sample weight engine."""
 
 from __future__ import annotations

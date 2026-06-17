@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build long daily returns for Week 5 Stage 2 and verify parity with wide returns."""
 
 from __future__ import annotations

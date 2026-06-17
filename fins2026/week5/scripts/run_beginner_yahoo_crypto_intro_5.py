@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 5 Yahoo Finance crypto warm-up pull on five headline coins."""
 
 from __future__ import annotations

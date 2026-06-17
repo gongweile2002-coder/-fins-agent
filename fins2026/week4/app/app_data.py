@@ -1,3 +1,4 @@
+# ruff: noqa
 """Cached data loaders for the Week 4 portfolio app."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build FT-style Stage 2 return-diagnostic figures for Week 4."""
 
 from __future__ import annotations

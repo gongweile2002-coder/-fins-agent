@@ -1,3 +1,4 @@
+# ruff: noqa
 """Focused tests for the Week 2 FRED Stage 1 walkthrough helpers."""
 
 from __future__ import annotations

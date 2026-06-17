@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the 50-ticker Yahoo Finance panel pull."""
 
 from __future__ import annotations

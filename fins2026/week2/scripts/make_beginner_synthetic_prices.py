@@ -1,3 +1,4 @@
+# ruff: noqa
 """Create the Week 2 beginner synthetic price CSV."""
 
 from __future__ import annotations

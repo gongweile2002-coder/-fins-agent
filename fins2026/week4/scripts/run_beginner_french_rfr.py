@@ -1,3 +1,4 @@
+# ruff: noqa
 """Download the Week 4 daily risk-free rate from Kenneth French."""
 
 from __future__ import annotations

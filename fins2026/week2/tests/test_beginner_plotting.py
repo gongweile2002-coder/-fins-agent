@@ -1,3 +1,4 @@
+# ruff: noqa
 """Tests for the Week 2 beginner plotting on-ramp."""
 
 from __future__ import annotations

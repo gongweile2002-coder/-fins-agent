@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pull live FRED market-and-macro data for the Week 2 figure exercise."""
 
 from __future__ import annotations

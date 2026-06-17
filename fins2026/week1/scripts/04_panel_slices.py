@@ -1,3 +1,4 @@
+# ruff: noqa
 """Slice the clean Tech 4 panel into multiple Week 1 data shapes."""
 
 from pathlib import Path

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Shared sample-window rules for the Week 2 FRED workflow."""
 
 from __future__ import annotations

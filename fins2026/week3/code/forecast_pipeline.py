@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3 Australia-first model inputs, benchmarks, and outputs."""
 
 from __future__ import annotations

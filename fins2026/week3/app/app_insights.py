@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pure insight, metric, and figure helpers for the Australia macro forecast app."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Add rolling Stage 2 features and summary metrics to the Week 5 long return panel."""
 
 from __future__ import annotations

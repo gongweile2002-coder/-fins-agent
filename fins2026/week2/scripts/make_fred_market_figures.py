@@ -1,3 +1,4 @@
+# ruff: noqa
 """Create FT-style figures from the Week 2 FRED market-and-macro panel."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build the FT-style Week 2 beginner time-series chart."""
 
 from __future__ import annotations

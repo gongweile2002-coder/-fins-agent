@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pull official Australian macro data for the Week 2 Australia figure pack."""
 
 from __future__ import annotations

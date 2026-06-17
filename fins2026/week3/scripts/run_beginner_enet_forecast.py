@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 3 beginner elastic-net walkthrough."""
 
 from __future__ import annotations

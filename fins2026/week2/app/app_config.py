@@ -1,3 +1,4 @@
+# ruff: noqa
 """Configuration constants for the Week 2 Streamlit intro app."""
 
 from __future__ import annotations

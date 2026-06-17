@@ -1,3 +1,4 @@
+# ruff: noqa
 """Beginner helpers for authenticated Tiingo equity pulls."""
 
 from __future__ import annotations

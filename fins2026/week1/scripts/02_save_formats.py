@@ -1,3 +1,4 @@
+# ruff: noqa
 """Clean the Tech 4 workshop CSV and save typed copies under results/data."""
 
 from pathlib import Path

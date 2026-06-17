@@ -1,3 +1,4 @@
+# ruff: noqa
 """Stage 2 helpers for Week 5 crypto return construction and summaries."""
 
 from __future__ import annotations

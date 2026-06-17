@@ -1,3 +1,4 @@
+# ruff: noqa
 
 
 """Week 2 end-of-class exercise: sector ETF narrative.

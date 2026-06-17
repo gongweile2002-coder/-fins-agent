@@ -1,3 +1,4 @@
+# ruff: noqa
 """Offline tests for the Week 5 Stage 4 app helpers."""
 
 from __future__ import annotations

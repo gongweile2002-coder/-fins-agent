@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 3 forecast benchmark suite."""
 
 from __future__ import annotations

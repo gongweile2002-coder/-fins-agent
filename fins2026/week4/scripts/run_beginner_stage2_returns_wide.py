@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build wide adjusted-price and return tables for Week 4 Stage 2."""
 
 from __future__ import annotations

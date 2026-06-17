@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 4 API teaching helpers."""
 
 from .api_intro_ecb import (

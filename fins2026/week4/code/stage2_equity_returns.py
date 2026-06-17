@@ -1,3 +1,4 @@
+# ruff: noqa
 """Stage 2 helpers for Week 4 return construction and feature engineering."""
 
 from __future__ import annotations

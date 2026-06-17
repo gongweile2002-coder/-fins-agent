@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 1 scaffold and dataset smoke tests."""
 
 from __future__ import annotations

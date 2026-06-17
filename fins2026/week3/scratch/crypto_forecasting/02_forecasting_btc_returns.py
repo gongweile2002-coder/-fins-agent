@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 3, even simpler: forecast the Bitcoin daily return with AR(1) and ARIMA.
 
 This is the second of two scripts. It reads the cleaned Bitcoin data that part 1

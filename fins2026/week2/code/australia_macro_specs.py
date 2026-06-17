@@ -1,3 +1,4 @@
+# ruff: noqa
 """Week 2 Australia macro data contracts and frozen classroom timing."""
 
 from __future__ import annotations

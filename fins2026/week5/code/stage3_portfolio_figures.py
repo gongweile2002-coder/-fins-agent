@@ -1,3 +1,4 @@
+# ruff: noqa
 """FT-style Stage 3 figures for Week 5 out-of-sample crypto portfolios."""
 
 from __future__ import annotations

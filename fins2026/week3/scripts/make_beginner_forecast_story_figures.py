@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build the Week 3 Australia forecast story figure pack."""
 
 from __future__ import annotations

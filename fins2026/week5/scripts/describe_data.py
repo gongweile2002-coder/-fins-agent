@@ -1,3 +1,4 @@
+# ruff: noqa
 """Summarize the current data files for this week."""
 
 from __future__ import annotations

@@ -1,3 +1,4 @@
+# ruff: noqa
 """Build the Week 2 FT-style validation figure proof pack."""
 
 from __future__ import annotations

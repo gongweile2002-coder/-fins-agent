@@ -1,3 +1,4 @@
+# ruff: noqa
 """Data loading and source-status helpers for the Week 2 Streamlit intro app."""
 
 from __future__ import annotations

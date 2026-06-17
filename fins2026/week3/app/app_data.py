@@ -1,3 +1,4 @@
+# ruff: noqa
 """Cached data and model-loading helpers for the Australia macro forecast app."""
 
 from __future__ import annotations

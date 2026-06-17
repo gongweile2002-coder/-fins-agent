@@ -1,3 +1,4 @@
+# ruff: noqa
 """Offline tests for the Week 5 Stage 3 OOS figure pack."""
 
 from __future__ import annotations

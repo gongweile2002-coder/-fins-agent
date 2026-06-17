@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 4 free-API walkthrough with the ECB."""
 
 from __future__ import annotations

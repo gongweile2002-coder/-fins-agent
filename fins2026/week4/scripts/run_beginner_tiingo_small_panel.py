@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the first authenticated Tiingo pull on a tiny ticker set."""
 
 from __future__ import annotations

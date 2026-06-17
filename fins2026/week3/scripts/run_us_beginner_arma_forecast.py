@@ -1,3 +1,4 @@
+# ruff: noqa
 """Run the Week 3 U.S. beginner ARMA-forecast walkthrough."""
 
 from __future__ import annotations
