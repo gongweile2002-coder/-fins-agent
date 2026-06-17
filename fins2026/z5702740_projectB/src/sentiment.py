@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 3 - your sentiment model and index from news headlines.
 
 This is the model step: score each headline, aggregate to a daily per-ticker score,

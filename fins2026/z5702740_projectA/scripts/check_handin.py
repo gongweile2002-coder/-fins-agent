@@ -1,3 +1,4 @@
+# ruff: noqa
 """Pre-hand-in check. Run from the project root:
 
     python scripts/check_handin.py

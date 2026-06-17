@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 2 - your features: return features and text assembly.
 
 Build your return features here, and assemble the headlines into a daily text

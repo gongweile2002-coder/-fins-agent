@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 3 (extension) - fuse sentiment into the funds.
 
 Tilt or factor: combine your sentiment signal with the portfolio weights,

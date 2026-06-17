@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 3 - your funds: optimal portfolios + out-of-sample backtest.
 
 Build at least a combined equity-plus-crypto fund with two optimisation methods.

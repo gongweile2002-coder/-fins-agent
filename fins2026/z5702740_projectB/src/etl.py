@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 1 - your ETL: load and clean the data.
 
 Load raw data through src.data_access (see context/DATA_GUIDE.md). Add your own

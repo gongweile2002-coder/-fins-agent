@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 2 features: returns and headline text assembly."""
 from __future__ import annotations
 

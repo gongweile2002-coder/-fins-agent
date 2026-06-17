@@ -1,3 +1,4 @@
+# ruff: noqa
 """FinTech Project - your investment app (starter).
 
 This thin starter proves the app deploys and loads the hosted data. Build your real

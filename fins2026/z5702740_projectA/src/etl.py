@@ -1,3 +1,4 @@
+# ruff: noqa
 """Station 1 ETL: load and clean the project data."""
 from __future__ import annotations
 

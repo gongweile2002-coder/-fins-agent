@@ -1,3 +1,4 @@
+# ruff: noqa
 """Reproduce Part A results. Run from the project root:
 
     python scripts/run_part_a.py

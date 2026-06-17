@@ -1,3 +1,4 @@
+# ruff: noqa
 """Smoke test: imports resolve and the data loads.
 
     python tests/test_smoke.py

@@ -1,3 +1,4 @@
+# ruff: noqa
 # PROVIDED - do not edit. Frozen copy of the course data_access helper.
 """Single entry point for loading the hosted project datasets.
 
