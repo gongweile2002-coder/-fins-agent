@@ -1,0 +1,4 @@
+dataset,asset_class,raw_rows,clean_rows,rows_removed,tickers,start_date,end_date,primary_key,duplicate_keys_after_clean
+equity_prices,Equity,50300,50300,0,50,2020-01-02,2023-12-29,ticker+date,0
+crypto_prices,Crypto,14620,14610,10,10,2020-01-01,2023-12-31,ticker+date,0
+news_headlines,Equity news,149683,146836,2847,50,2020-01-01,2023-12-31,ticker+date+title,0

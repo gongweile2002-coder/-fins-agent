@@ -1,0 +1,4 @@
+dataset,raw_rows,clean_rows,rows_removed,duplicate_keys_after_clean
+equity_prices,50300,50300,0,0
+crypto_prices,14620,14610,10,0
+news_headlines,149683,146836,2847,0

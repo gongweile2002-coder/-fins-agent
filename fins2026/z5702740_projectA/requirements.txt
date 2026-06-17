@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.11
+pyarrow>=12.0
+requests>=2.31
+nltk>=3.8
+matplotlib>=3.7
+reportlab>=4.0
