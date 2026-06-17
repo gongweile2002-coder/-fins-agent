@@ -1,14 +1,13 @@
-# ruff: noqa
 """Smoke test: imports resolve and the data loads.
 
     python tests/test_smoke.py
 """
-import pathlib
 import sys
+import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from src import data_access
+from src import data_access  # noqa: E402
 
 
 def test_imports():

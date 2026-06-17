@@ -1,28 +1,30 @@
-# Agent Instructions for FINS5545 Project B
+# AGENTS.md - FINS5545 Part B Working Instructions
 
-Student: z5702740
+This project builds systematic multi-asset funds and a Streamlit dashboard from
+the hosted FINS5545 project data. Raw parquet files must be loaded only through
+`src/data_access.py`; raw data files should not be committed. Derived app inputs
+under `results/` are expected to be committed because the deployed app reads
+precomputed outputs.
 
-This folder is for FINS5545 Project B only. The goal is to build systematic investment funds, a sentiment analytics layer, and a deployed Streamlit app.
+Project rules for AI/code assistance:
 
-The agent should help with:
-- reading and following PROJECT_BRIEF.md exactly;
-- reusing the Part A data foundation without committing raw source data;
-- building out-of-sample fund returns and weights with no look-ahead bias;
-- creating at least two optimisation methods for a combined equity-plus-crypto fund;
-- generating app-readable CSV files in results/data/ using the exact required filenames;
-- generating report tables and figures in results/tables/ and results/figures/;
-- building a lightweight Streamlit app that reads precomputed results instead of recomputing heavy models;
-- drafting clear report notes supported by saved outputs.
+- Keep portfolio backtests walk-forward and out-of-sample. Weights may use only
+  information available on or before the rebalance date and should apply from the
+  next trading day.
+- Compute crypto returns on the crypto calendar before aligning them to the
+  equity trading calendar for combined funds.
+- Deduplicate headlines by `ticker`, `date`, and `title`. Sentiment signals must
+  be lagged before they affect any portfolio weights.
+- The Streamlit app must not import NLTK or recompute sentiment/backtests. It
+  should load `results/data/*.csv` and `results/tables/*.csv`.
+- Prefer clear pandas/numpy code, labelled figures, and reproducible scripts.
+  Required outputs use the filenames in `PROJECT_BRIEF.md`.
+- Treat AI-written interpretation as a draft only. The final report wording and
+  investment interpretation should be reviewed and rewritten by the student.
 
-Rules:
-- Do not invent data, fund results, or performance metrics.
-- Do not use future data when forming portfolio weights.
-- Lag sentiment signals by at least one trading day before using them in any trading or fund logic.
-- Keep raw .parquet/source data out of the submitted folder and GitHub commit.
-- Use the exact required output filenames from PROJECT_BRIEF.md:
-  - results/data/fund_returns.csv
-  - results/data/fund_weights.csv
-  - results/data/sector_sentiment_index.csv
-  - results/tables/performance_metrics.csv
-- The deployed app must load precomputed artifacts from results/ and should not recompute backtests or sentiment scoring on the free Streamlit tier.
-- Written interpretation must be checked and rewritten by the student.
+Verification steps:
+
+1. Run `python scripts/run_part_b.py` from the project root.
+2. Run `python scripts/check_handin.py`.
+3. Run `streamlit run streamlit_app.py` and check that the dashboard loads.
+4. Review `report/report.pdf` and edit the wording before submission.
