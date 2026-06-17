@@ -8,14 +8,13 @@ Run locally:   streamlit run streamlit_app.py
 Deploy:        push this folder to a public GitHub repo, then connect it on
                share.streamlit.io with entrypoint streamlit_app.py (see brief App. D).
 """
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-import streamlit as st  # noqa: E402
-
-from src import data_access  # noqa: E402
+import streamlit as st
+from src import data_access
 
 st.set_page_config(page_title="Systematic Funds", layout="wide")
 st.title("Systematic Multi-Asset Funds")

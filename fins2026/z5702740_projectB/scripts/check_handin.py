@@ -5,9 +5,9 @@
 Fix every [FAIL] before you zip and submit. [WARN] items are reminders (they do not
 block). Part B additionally checks the app and deploy files.
 """
+import pathlib
 import re
 import sys
-import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 oks, problems, warns = [], [], []

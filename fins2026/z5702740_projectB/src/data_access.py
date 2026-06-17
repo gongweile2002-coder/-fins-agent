@@ -14,10 +14,10 @@ so the same code is fast on a student laptop and on Streamlit Community Cloud.
 """
 from __future__ import annotations
 
-import os
-import io
-import zipfile
 import functools
+import io
+import os
+import zipfile
 
 import pandas as pd
 import requests
@@ -100,6 +100,9 @@ def load_sector_universe() -> pd.DataFrame:
 
 
 __all__ = [
-    "DATA_ZIP_URL", "load_equity_prices", "load_crypto_prices",
-    "load_news_headlines", "load_sector_universe",
+    "DATA_ZIP_URL",
+    "load_crypto_prices",
+    "load_equity_prices",
+    "load_news_headlines",
+    "load_sector_universe",
 ]
