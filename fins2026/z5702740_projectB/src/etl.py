@@ -4,12 +4,12 @@ The raw parquet files are loaded only through ``src.data_access``. These helpers
 standardise dates, remove exact duplicate keys, and keep a compact audit trail
 that the reproduction script writes to ``results/tables``.
 """
+
 from __future__ import annotations
 
 import pandas as pd
 
 from src import data_access
-
 
 PRICE_KEY = ["ticker", "date"]
 NEWS_KEY = ["ticker", "date", "title"]
@@ -61,7 +61,7 @@ def price_audit(df: pd.DataFrame, asset_class: str) -> dict:
     return {
         "dataset": f"{asset_class.lower()}_prices",
         "asset_class": asset_class,
-        "rows": int(len(df)),
+        "rows": len(df),
         "tickers": int(df["ticker"].nunique()),
         "start_date": df["date"].min().date().isoformat(),
         "end_date": df["date"].max().date().isoformat(),
@@ -76,7 +76,7 @@ def headline_audit(news: pd.DataFrame, raw_rows: int | None = None) -> dict:
     return {
         "dataset": "news_headlines",
         "asset_class": "Equity news",
-        "rows": int(len(news)),
+        "rows": len(news),
         "tickers": int(news["ticker"].nunique()),
         "start_date": news["date"].min().date().isoformat(),
         "end_date": news["date"].max().date().isoformat(),

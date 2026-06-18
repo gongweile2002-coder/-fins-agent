@@ -1,4 +1,5 @@
 """Return features and headline text assembly."""
+
 from __future__ import annotations
 
 import numpy as np
@@ -23,11 +24,7 @@ def daily_returns(
     df = df.dropna(subset=["return"])
     if not wide:
         return df[["date", "ticker", "return"]].reset_index(drop=True)
-    return (
-        df.pivot(index="date", columns="ticker", values="return")
-        .sort_index()
-        .astype(float)
-    )
+    return df.pivot(index="date", columns="ticker", values="return").sort_index().astype(float)
 
 
 def align_crypto_to_equity_calendar(

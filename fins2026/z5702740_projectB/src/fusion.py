@@ -1,4 +1,5 @@
 """Station 3 extension: fuse lagged sector sentiment into equity weights."""
+
 from __future__ import annotations
 
 import numpy as np
@@ -24,7 +25,9 @@ def apply_sentiment(
     sched["rebalance_date"] = pd.to_datetime(sched["rebalance_date"])
     sector_map = ticker_sector[["ticker", "sector"]].drop_duplicates()
     sched = sched.merge(sector_map, on="ticker", how="left", suffixes=("", "_map"))
-    sched["sector"] = sched["sector"].fillna(sched.pop("sector_map") if "sector_map" in sched else "Crypto")
+    sched["sector"] = sched["sector"].fillna(
+        sched.pop("sector_map") if "sector_map" in sched else "Crypto"
+    )
 
     sent = sentiment.copy()
     sent["date"] = pd.to_datetime(sent["date"])
@@ -58,7 +61,9 @@ def apply_sentiment(
                 under = ~over
                 if g.loc[under, "weight"].sum() <= 0:
                     break
-                g.loc[under, "weight"] += excess * g.loc[under, "weight"] / g.loc[under, "weight"].sum()
+                g.loc[under, "weight"] += (
+                    excess * g.loc[under, "weight"] / g.loc[under, "weight"].sum()
+                )
         g["weight"] = g["weight"] / g["weight"].sum()
         g["sentiment_signal"] = signal
         g["fund"] = fund_name

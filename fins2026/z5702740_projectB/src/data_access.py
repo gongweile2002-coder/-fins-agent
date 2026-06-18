@@ -12,12 +12,13 @@ the network. Switch host by changing one setting:
 Caching uses Streamlit's cache inside Streamlit and an in-process LRU otherwise,
 so the same code is fast on a student laptop and on Streamlit Community Cloud.
 """
+
 from __future__ import annotations
 
-import os
-import io
-import zipfile
 import functools
+import io
+import os
+import zipfile
 
 import pandas as pd
 import requests
@@ -34,6 +35,7 @@ def _cache(func):
     """Use st.cache_data inside Streamlit, else a plain LRU cache."""
     try:
         import streamlit as st
+
         return st.cache_data(ttl=86_400, show_spinner=False)(func)
     except Exception:
         return functools.lru_cache(maxsize=8)(func)
@@ -95,11 +97,18 @@ def load_news_headlines() -> pd.DataFrame:
 def load_sector_universe() -> pd.DataFrame:
     """Ticker -> sector map. Derived from the equity prices (no separate file needed)."""
     eq = load_equity_prices()
-    return (eq[["ticker", "sector"]].drop_duplicates()
-              .sort_values(["sector", "ticker"]).reset_index(drop=True))
+    return (
+        eq[["ticker", "sector"]]
+        .drop_duplicates()
+        .sort_values(["sector", "ticker"])
+        .reset_index(drop=True)
+    )
 
 
 __all__ = [
-    "DATA_ZIP_URL", "load_equity_prices", "load_crypto_prices",
-    "load_news_headlines", "load_sector_universe",
+    "DATA_ZIP_URL",
+    "load_crypto_prices",
+    "load_equity_prices",
+    "load_news_headlines",
+    "load_sector_universe",
 ]

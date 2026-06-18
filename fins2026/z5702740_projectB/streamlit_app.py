@@ -3,11 +3,9 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-import pandas as pd  # noqa: E402
-import streamlit as st  # noqa: E402
-
-from src.portfolios import performance_metrics  # noqa: E402
-
+import pandas as pd
+import streamlit as st
+from src.portfolios import performance_metrics
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "results" / "data"
@@ -52,7 +50,9 @@ def current_holdings(fund, top_n=15):
     return subset[["ticker", "weight", "rebalance_date"]]
 
 
-tab_funds, tab_allocation, tab_sentiment, tab_method = st.tabs(["Funds", "Allocation", "Sentiment", "Method"])
+tab_funds, tab_allocation, tab_sentiment, tab_method = st.tabs(
+    ["Funds", "Allocation", "Sentiment", "Method"]
+)
 
 with tab_funds:
     left, right = st.columns([0.62, 0.38])
@@ -71,13 +71,25 @@ with tab_funds:
             st.line_chart(growth)
             st.dataframe(
                 metrics[metrics["fund"].isin(selected)][
-                    ["fund", "family", "annual_return", "annual_volatility", "sharpe", "max_drawdown", "first_live_date"]
+                    [
+                        "fund",
+                        "family",
+                        "annual_return",
+                        "annual_volatility",
+                        "sharpe",
+                        "max_drawdown",
+                        "first_live_date",
+                    ]
                 ],
                 width="stretch",
                 hide_index=True,
             )
     with right:
-        fund = st.selectbox("Fact sheet", funds, index=funds.index("Combined Min Variance") if "Combined Min Variance" in funds else 0)
+        fund = st.selectbox(
+            "Fact sheet",
+            funds,
+            index=funds.index("Combined Min Variance") if "Combined Min Variance" in funds else 0,
+        )
         row = metrics[metrics["fund"].eq(fund)].iloc[0]
         metric_cards(row)
         dd = fund_returns[fund_returns["fund"].eq(fund)].set_index("date")["drawdown"]
@@ -98,7 +110,11 @@ with tab_allocation:
             raw_weights[fund] = col.slider(fund, 0, 100, int(100 / len(chosen)), 5)
         total = sum(raw_weights.values()) or 1
         alloc = {fund: weight / total for fund, weight in raw_weights.items()}
-        pivot = fund_returns[fund_returns["fund"].isin(chosen)].pivot(index="date", columns="fund", values="return").dropna()
+        pivot = (
+            fund_returns[fund_returns["fund"].isin(chosen)]
+            .pivot(index="date", columns="fund", values="return")
+            .dropna()
+        )
         blended = pivot.mul(pd.Series(alloc), axis=1).sum(axis=1)
         blend_growth = (1 + blended).cumprod()
         blend_metrics = performance_metrics(blended, periods_per_year=252)

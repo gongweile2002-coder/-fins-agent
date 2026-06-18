@@ -1,13 +1,14 @@
 """Smoke test: imports resolve and the data loads.
 
-    python tests/test_smoke.py
+python tests/test_smoke.py
 """
-import sys
+
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from src import data_access  # noqa: E402
+from src import data_access
 
 
 def test_imports():

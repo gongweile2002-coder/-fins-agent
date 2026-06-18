@@ -5,6 +5,7 @@ than in ``streamlit_app.py``. I use a small transparent finance lexicon instead
 of VADER so the reproduction step is deterministic and does not need an NLTK
 data download.
 """
+
 from __future__ import annotations
 
 import math
@@ -12,26 +13,104 @@ import re
 
 import pandas as pd
 
-
 TOKEN_RE = re.compile(r"[A-Za-z][A-Za-z'-]+")
 
 POSITIVE = {
-    "advance", "advanced", "advances", "beat", "beats", "beating", "benefit",
-    "boost", "boosts", "bullish", "buyback", "climb", "climbs", "deal",
-    "dividend", "expand", "expands", "gain", "gains", "growth", "higher",
-    "improve", "improves", "improved", "jump", "jumps", "leader", "outperform",
-    "positive", "profit", "profits", "rally", "rallies", "record", "recover",
-    "recovers", "recovery", "rise", "rises", "rose", "strong", "surge", "surges",
-    "top", "tops", "upgrade", "upgrades", "upside", "win", "wins",
+    "advance",
+    "advanced",
+    "advances",
+    "beat",
+    "beats",
+    "beating",
+    "benefit",
+    "boost",
+    "boosts",
+    "bullish",
+    "buyback",
+    "climb",
+    "climbs",
+    "deal",
+    "dividend",
+    "expand",
+    "expands",
+    "gain",
+    "gains",
+    "growth",
+    "higher",
+    "improve",
+    "improves",
+    "improved",
+    "jump",
+    "jumps",
+    "leader",
+    "outperform",
+    "positive",
+    "profit",
+    "profits",
+    "rally",
+    "rallies",
+    "record",
+    "recover",
+    "recovers",
+    "recovery",
+    "rise",
+    "rises",
+    "rose",
+    "strong",
+    "surge",
+    "surges",
+    "top",
+    "tops",
+    "upgrade",
+    "upgrades",
+    "upside",
+    "win",
+    "wins",
 }
 
 NEGATIVE = {
-    "bearish", "cut", "cuts", "decline", "declines", "default", "downgrade",
-    "downgrades", "drop", "drops", "fall", "falls", "fell", "fraud", "hurt",
-    "inflation", "lawsuit", "layoff", "layoffs", "loss", "losses", "miss",
-    "misses", "negative", "plunge", "plunges", "pressure", "probe", "recession",
-    "risk", "risks", "slump", "slumps", "slowdown", "struggle", "struggles",
-    "tumble", "tumbles", "underperform", "weak", "weaker", "warning",
+    "bearish",
+    "cut",
+    "cuts",
+    "decline",
+    "declines",
+    "default",
+    "downgrade",
+    "downgrades",
+    "drop",
+    "drops",
+    "fall",
+    "falls",
+    "fell",
+    "fraud",
+    "hurt",
+    "inflation",
+    "lawsuit",
+    "layoff",
+    "layoffs",
+    "loss",
+    "losses",
+    "miss",
+    "misses",
+    "negative",
+    "plunge",
+    "plunges",
+    "pressure",
+    "probe",
+    "recession",
+    "risk",
+    "risks",
+    "slump",
+    "slumps",
+    "slowdown",
+    "struggle",
+    "struggles",
+    "tumble",
+    "tumbles",
+    "underperform",
+    "weak",
+    "weaker",
+    "warning",
 }
 
 NEGATORS = {"no", "not", "never", "without", "less", "hardly"}
@@ -85,13 +164,11 @@ def sector_sentiment_index(
     lag_days: int = 1,
 ) -> pd.DataFrame:
     """Build a lagged sector sentiment index equal-weighted across tickers."""
-    daily_ticker = (
-        scores.groupby(["date", "sector", "ticker"], as_index=False)
-        .agg(sentiment_score=("sentiment_score", "mean"), article_count=("article_count", "sum"))
+    daily_ticker = scores.groupby(["date", "sector", "ticker"], as_index=False).agg(
+        sentiment_score=("sentiment_score", "mean"), article_count=("article_count", "sum")
     )
-    sector = (
-        daily_ticker.groupby(["date", "sector"], as_index=False)
-        .agg(raw_sentiment=("sentiment_score", "mean"), article_count=("article_count", "sum"))
+    sector = daily_ticker.groupby(["date", "sector"], as_index=False).agg(
+        raw_sentiment=("sentiment_score", "mean"), article_count=("article_count", "sum")
     )
     pivot = sector.pivot(index="date", columns="sector", values="raw_sentiment")
     counts = sector.pivot(index="date", columns="sector", values="article_count")
@@ -105,11 +182,20 @@ def sector_sentiment_index(
     smoothed.index.name = "date"
     lagged.index.name = "date"
     counts.index.name = "date"
-    raw_long = pivot.reset_index().melt(id_vars="date", var_name="sector", value_name="raw_sentiment")
-    smooth_long = smoothed.reset_index().melt(id_vars="date", var_name="sector", value_name="sentiment_index")
-    lagged_long = lagged.reset_index().melt(id_vars="date", var_name="sector", value_name="lagged_signal")
-    count_long = counts.fillna(0).astype(int).reset_index().melt(
-        id_vars="date", var_name="sector", value_name="article_count"
+    raw_long = pivot.reset_index().melt(
+        id_vars="date", var_name="sector", value_name="raw_sentiment"
+    )
+    smooth_long = smoothed.reset_index().melt(
+        id_vars="date", var_name="sector", value_name="sentiment_index"
+    )
+    lagged_long = lagged.reset_index().melt(
+        id_vars="date", var_name="sector", value_name="lagged_signal"
+    )
+    count_long = (
+        counts.fillna(0)
+        .astype(int)
+        .reset_index()
+        .melt(id_vars="date", var_name="sector", value_name="article_count")
     )
     out = (
         raw_long.merge(smooth_long, on=["date", "sector"], how="left")

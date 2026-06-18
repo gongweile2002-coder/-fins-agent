@@ -1,4 +1,5 @@
 """Station 3 portfolio construction and walk-forward backtests."""
+
 from __future__ import annotations
 
 import math
@@ -77,7 +78,9 @@ def estimate_weights(
     return _normalise_weights(pd.Series(raw, index=assets), max_weight=max_weight)
 
 
-def rebalance_dates(index: pd.DatetimeIndex, lookback: int, frequency: str = "M") -> list[pd.Timestamp]:
+def rebalance_dates(
+    index: pd.DatetimeIndex, lookback: int, frequency: str = "M"
+) -> list[pd.Timestamp]:
     """Return period-end rebalance dates after the lookback window."""
     dates = pd.DatetimeIndex(index).sort_values()
     eligible = dates[lookback - 1 :]
@@ -142,7 +145,7 @@ def performance_metrics(daily_returns: pd.Series, periods_per_year: int = 252) -
         "max_drawdown": float(drawdown.min()),
         "cumulative_return": float(growth.iloc[-1] - 1),
         "hit_rate": float((r > 0).mean()),
-        "observations": int(len(r)),
+        "observations": len(r),
     }
 
 
