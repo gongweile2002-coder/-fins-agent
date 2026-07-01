@@ -1,0 +1,9 @@
+universe,strategy,sharpe,ann_vol,max_drawdown
+Equity (50),1/N,0.82,0.162,-0.203
+Equity (50),Inverse-vol,0.72,0.152,-0.193
+Equity (50),Risk parity,0.72,0.15,-0.196
+Equity (50),Min-var,0.6,0.128,-0.183
+Combined (60),1/N,0.97,0.217,-0.272
+Combined (60),Inverse-vol,0.9,0.166,-0.211
+Combined (60),Risk parity,0.92,0.171,-0.217
+Combined (60),Min-var,0.6,0.128,-0.183

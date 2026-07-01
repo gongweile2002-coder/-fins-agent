@@ -1,0 +1,12 @@
+metric,Bitcoin,S&P 500
+Total return,101944014.78%,760.57%
+Annualized return (CAGR),144.81%,14.95%
+Annualized volatility,90.10%,17.18%
+Sharpe ratio,1.42,0.82
+Sortino ratio,2.23,1.15
+Maximum drawdown,-92.75%,-33.55%
+Daily VaR (95%),6.01%,1.62%
+Daily expected shortfall (95%),10.40%,2.60%
+Worst daily return,-48.57%,-11.90%
+Daily return skewness,0.68,-0.38
+Daily excess kurtosis,17.44,13.42
